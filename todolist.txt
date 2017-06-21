@@ -11,5 +11,5 @@ API reference:
   ☐ gulp.dst()
     ☐ Adding destination from config.dstPath.
     ☐ Contact and rename the files (if necessary).
-  ☐ gulp.watch()
-    ☐ Recreate the behavior of an API using the plugin gulp-watch.
+  ✔ gulp.watch() @done (17-06-21 23:32)
+    ✔ Recreate the behavior of an API using the plugin gulp-watch. @done (17-06-21 23:32)
