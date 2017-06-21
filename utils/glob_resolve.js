@@ -1,20 +1,19 @@
 'use strict';
 
 const Path = require('path');
+const cwd = process.cwd();
 
-function resolve(base, path) {
-  path = Path.resolve(base, path);
-  let cwd = process.cwd();
+module.exports = function() {
+  let args = Array.prototype.slice.call(arguments, 0);
 
-  return path.indexOf(cwd) === 0
-    ? '.' + path.substr(cwd.length)
-    : path;
-}
+  if (args.length < 2) {
+    args.splice(0, 0, cwd);
+  }
 
-module.exports = function(base, glob) {
-  if (glob == null) return base;
+  let base = args[0];
+  let glob = args[1];
 
-  if (typeof(glob) == 'string') {
+  if (typeof(glob) === 'string') {
     glob = [glob];
   }
 
@@ -28,11 +27,17 @@ module.exports = function(base, glob) {
     if (isIgnore) {
       item = item.substr(1);
     }
+
+    let path = Path.resolve(base, item);
+
+    if (path.indexOf(cwd)) {
+      path = '.' + path.substr(cwd.length);
+    }
     
     let prefix = isIgnore ? '!' : '';
-    let value = prefix + resolve(base, item);
+    path = prefix + path;
 
-    list.push(value);
+    list.push(path);
   }
 
   return list;
