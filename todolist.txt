@@ -1,9 +1,9 @@
 API reference:
   ✔ gulp.task() - Task grouping. @done (17-06-21 14:15)
-  ☐ gulp.config() - Extensible configuration.
-    ☐ srcPath - Base path for sources.
-    ☐ dstPath - Base path for results.
-    ☐ Custom properties.
+  ✔ gulp.config() - Extensible configuration. @done (17-06-21 14:50)
+    ✔ srcPath - Base path for sources. @done (17-06-21 14:50)
+    ✔ dstPath - Base path for results. @done (17-06-21 14:50)
+    ✔ Custom properties. @done (17-06-21 14:50)
   ☐ gulp.src()
     ☐ Resolving file patterns by config.srcPath.
     ☐ Error's handling by gulp-plumber.
