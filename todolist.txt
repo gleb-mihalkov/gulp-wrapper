@@ -1,5 +1,5 @@
 API reference:
-  ☐ gulp.task() - Task grouping.
+  ✔ gulp.task() - Task grouping. @done (17-06-21 14:15)
   ☐ gulp.config() - Extensible configuration.
     ☐ srcPath - Base path for sources.
     ☐ dstPath - Base path for results.
