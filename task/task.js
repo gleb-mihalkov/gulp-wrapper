@@ -54,11 +54,6 @@ function push(gulp, node) {
   old.fn = node.fn;
 }
 
-function pushDefault(gulp, name) {
-  let node = create('default:' + name);
-  push(gulp, node);
-}
-
 function register(gulp, node) {
   if (node == null) {
     node = gulp._taskTree;
@@ -76,10 +71,7 @@ function register(gulp, node) {
   }
 
   if (node.deps) {
-    for (let i = 0; i < node.deps.length; i++) {
-      let dep = node.deps[i];
-      if (childs.indexOf(dep) < 0) childs.push(dep);
-    }
+    childs = childs.concat(node.deps);
   }
 
   if (node.full === '_root') return;
