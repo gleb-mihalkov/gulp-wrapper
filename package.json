@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/gleb-mihalkov/gulp-wrapper/issues"
   },
-  "homepage": "https://github.com/gleb-mihalkov/gulp-wrapper#readme"
+  "homepage": "https://github.com/gleb-mihalkov/gulp-wrapper#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }

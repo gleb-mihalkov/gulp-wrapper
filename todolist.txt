@@ -1,0 +1,15 @@
+API reference:
+  ☐ gulp.task() - Task grouping.
+  ☐ gulp.config() - Extensible configuration.
+    ☐ srcPath - Base path for sources.
+    ☐ dstPath - Base path for results.
+    ☐ Custom properties.
+  ☐ gulp.src()
+    ☐ Resolving file patterns by config.srcPath.
+    ☐ Error's handling by gulp-plumber.
+    ☐ Error notifications.
+  ☐ gulp.dst()
+    ☐ Adding destination from config.dstPath.
+    ☐ Contact and rename the files (if necessary).
+  ☐ gulp.watch()
+    ☐ Recreate the behavior of an API using the plugin gulp-watch.
