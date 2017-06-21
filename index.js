@@ -8,6 +8,7 @@ const watchMixin = require('./mixins/watch.js');
 module.exports = function() {
 	configMixin(gulp);
 	taskMixin(gulp);
+  watchMixin(gulp);
 
 	return gulp;
 }();

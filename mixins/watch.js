@@ -36,7 +36,7 @@ module.exports = function(gulp) {
     let cb = args[2];
 
     if (typeof(cb) !== 'function') {
-      cb = getCallback(cb);
+      cb = getCallback(gulp, cb);
     }
 
     glob = globResolve(gulp.config.src, glob);
