@@ -1,0 +1,22 @@
+{
+  "name": "gulp-wrapper",
+  "version": "1.0.0",
+  "description": "Wrapper for Gulp to extend its functionality.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleb-mihalkov/gulp-wrapper.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "gm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gleb-mihalkov/gulp-wrapper/issues"
+  },
+  "homepage": "https://github.com/gleb-mihalkov/gulp-wrapper#readme"
+}
