@@ -21,6 +21,8 @@
   "homepage": "https://github.com/gleb-mihalkov/gulp-wrapper#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-watch": "^4.3.11"
+    "gulp-notify": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "pretty-error": "^2.1.1"
   }
 }
