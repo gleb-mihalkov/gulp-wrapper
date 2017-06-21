@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/gleb-mihalkov/gulp-wrapper#readme",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11"
   }
 }

@@ -9,13 +9,13 @@ function resolve(value, def) {
 }
 
 let defaults = {
-  srcPath: cwd,
-  dstPath: cwd
+  src: cwd,
+  dst: cwd
 };
 
 let filters = {
-  srcPath: resolve,
-  dstPath: resolve
+  src: resolve,
+  dst: resolve
 };
 
 function merge(dst, src) {
