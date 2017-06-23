@@ -1,4 +1,6 @@
 /node_modules/
+/test_src/
+/test_dst/
 debug.js
 gulpfile.js
 gulp-wrapper.sublime-workspace

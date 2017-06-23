@@ -50,5 +50,3 @@ module.exports = function(gulp) {
     return resultStream;
   };
 };
-
-module.exports._splitDest = splitDest;
