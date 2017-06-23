@@ -26,5 +26,8 @@
     "gulp-plumber": "^1.1.0",
     "gulp-watch": "^4.3.11",
     "pretty-error": "^2.1.1"
+  },
+  "devDependencies": {
+    "gulp-stylus": "^2.6.0"
   }
 }

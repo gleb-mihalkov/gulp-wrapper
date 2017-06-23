@@ -1,6 +1,6 @@
 'use strict';
 
-const errorHandler = require('../units/error_handler.js');
+const errorHandler = require('../utils/error_handler.js');
 const globResolve = require('../utils/glob_resolve.js');
 const plumber = require('gulp-plumber');
 
