@@ -1,6 +1,6 @@
 'use strict';
 
-const globResolve = require('../utils/glob_resolve.js');
+const pathResolve = require('../utils/path_resolve.js');
 const concat = require('gulp-concat');
 const Path = require('path');
 
@@ -27,9 +27,7 @@ function splitDest(gulp, dest) {
     filename = '';
   }
 
-  basename = globResolve(gulp.config.dst, basename);
-  basename = basename[0];
-
+  basename = pathResolve(gulp.config.dst, basename);
   return [basename, filename];
 }
 

@@ -1,7 +1,6 @@
 'use strict';
 
-const Path = require('path');
-const cwd = process.cwd();
+const pathResolve = require('./path_resolve.js');
 
 module.exports = function() {
   let args = Array.prototype.slice.call(arguments, 0);
@@ -28,11 +27,7 @@ module.exports = function() {
       item = item.substr(1);
     }
 
-    let path = Path.resolve(base, item);
-
-    if (path.indexOf(cwd)) {
-      path = '.' + path.substr(cwd.length);
-    }
+    let path = pathResolve(base, item);
     
     let prefix = isIgnore ? '!' : '';
     path = prefix + path;
