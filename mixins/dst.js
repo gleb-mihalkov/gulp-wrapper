@@ -34,14 +34,16 @@ function splitDest(gulp, dest) {
 module.exports = function(gulp) {
   gulp._dstFn = gulp.dest;
 
-  gulp.dst = function(dest) {
+  gulp.dst = function(dest, options) {
+    options = options || {};
     dest = dest || '';
+
     dest = splitDest(gulp, dest);
 
     let basename = dest[0];
     let filename = dest[1];
 
-    let destStream = gulp._dstFn(basename);
+    let destStream = gulp._dstFn(basename, options);
     let resultStream = destStream;
 
     if (filename) {

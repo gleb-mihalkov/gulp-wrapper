@@ -8,8 +8,16 @@ API reference:
     ✔ Resolving file patterns by config.srcPath. @done (17-06-23 14:23)
     ✔ Error's handling by gulp-plumber. @done (17-06-23 14:23)
     ✔ Error notifications. @done (17-06-23 14:23)
+    ☐ Changed option: true is gulp.config.dst.
+    ☐ Respect the opts.base in resolving.
   ✔ gulp.dst() @done (17-06-23 14:23)
     ✔ Adding destination from config.dstPath. @done (17-06-23 14:23)
     ✔ Contact and rename the files (if necessary). @done (17-06-23 14:23)
+    ✔ Add options. @done (17-06-23 19:11)
   ✔ gulp.watch() @done (17-06-21 23:32)
     ✔ Recreate the behavior of an API using the plugin gulp-watch. @done (17-06-21 23:32)
+  ☐ gulp.init()
+    ✔ Task names arguments. @done (17-06-23 14:28)
+    ☐ deps and callback arguments.
+  ☐ gulp-util mixin.
+  ☐ gulp-if mixin.
