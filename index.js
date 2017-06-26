@@ -1,16 +1,16 @@
 'use strict'
 
 const gulp = require('gulp');
-const configMixin = require('./mixins/config.js');
-const taskMixin = require('./mixins/task.js');
-const watchMixin = require('./mixins/watch.js');
-const srcMixin = require('./mixins/src.js');
-const dstMixin = require('./mixins/dst.js');
-const utilMixin = require('./mixins/util.js');
-const isMixin = require('./mixins/is.js');
-const debugMixin = require('./mixins/debug.js');
-const ignoreMixin = require('./mixins/ignore.js');
-const addMixin = require('./mixins/add.js');
+const configMixin = require(__dirname + '/mixins/config.js');
+const taskMixin = require(__dirname + '/mixins/task.js');
+const watchMixin = require(__dirname + '/mixins/watch.js');
+const srcMixin = require(__dirname + '/mixins/src.js');
+const dstMixin = require(__dirname + '/mixins/dst.js');
+const utilMixin = require(__dirname + '/mixins/util.js');
+const isMixin = require(__dirname + '/mixins/is.js');
+const debugMixin = require(__dirname + '/mixins/debug.js');
+const ignoreMixin = require(__dirname + '/mixins/ignore.js');
+const addMixin = require(__dirname + '/mixins/add.js');
 
 module.exports = function() {
 	configMixin(gulp);
