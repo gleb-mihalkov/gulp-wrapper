@@ -7,6 +7,7 @@ const watchMixin = require('./mixins/watch.js');
 const srcMixin = require('./mixins/src.js');
 const dstMixin = require('./mixins/dst.js');
 const utilMixin = require('./mixins/util.js');
+const isMixin = require('./mixins/is.js');
 
 module.exports = function() {
 	configMixin(gulp);
@@ -15,6 +16,7 @@ module.exports = function() {
   srcMixin(gulp);
   dstMixin(gulp);
   utilMixin(gulp);
+  isMixin(gulp);
 
 	return gulp;
 }();
