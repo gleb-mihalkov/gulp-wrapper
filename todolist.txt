@@ -20,5 +20,10 @@ API reference:
   ✔ gulp.init() @done (17-06-26 11:32)
     ✔ Task names arguments. @done (17-06-23 14:28)
     ✔ deps and callback arguments. @done (17-06-26 11:32)
+  ☐ Error handling:
+    ☐ Render all errors with PrettyError.
+    ☐ Add displaying of error trace behaviour.
+       Disable displaying for stream events, enable for others.
+    ☐ Pass none-stream errors to stream when stream in process.
   ☐ gulp-util mixin.
   ☐ gulp-if mixin.
