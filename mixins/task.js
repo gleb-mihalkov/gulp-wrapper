@@ -90,21 +90,25 @@ module.exports = function(gulp) {
 
   gulp.task = function() {
     let args = Array.prototype.slice.call(arguments, 0);
-    let argsCount = args.length;
 
-    if (argsCount < 2) {
+    if (args.length < 2) {
       args.push(null);
     }
 
-    if (argsCount < 3) {
-      args.splice(1, 0, null);
+    if (args.length < 3) {
+      if (typeof(args[1]) === 'function') {
+        args.splice(1, 0, null);
+      }
+      else {
+        args.push(null);
+      }
     }
 
     let task = args[0];
     let deps = args[1];
     let fn = args[2];
 
-    let node = create(args[0], args[1], args[2]);
+    let node = create(task, deps, fn);
     push(gulp, node);
   };
 
@@ -113,13 +117,12 @@ module.exports = function(gulp) {
 
     let defs = Array.prototype.slice.call(arguments, 0);
     let tail = defs[defs.length - 1];
+    let fn = null;
 
     if (tail && typeof(tail) === 'function') {
-      let cb = defs.pop();
-      gulp._taskFn('default', defs, cb);
+      fn = defs.pop();
     }
-    else {
-      gulp._taskFn('default', defs);
-    }
+
+    gulp._taskFn('default', defs, fn);
   };
 };
