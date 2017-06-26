@@ -25,5 +25,5 @@ API reference:
     ☐ Add displaying of error trace behaviour.
        Disable displaying for stream events, enable for others.
     ☐ Pass none-stream errors to stream when stream in process.
-  ☐ gulp-util mixin.
+  ✔ gulp-util mixin. @done (17-06-26 12:25)
   ☐ gulp-if mixin.
