@@ -10,6 +10,7 @@ const utilMixin = require('./mixins/util.js');
 const isMixin = require('./mixins/is.js');
 const debugMixin = require('./mixins/debug.js');
 const ignoreMixin = require('./mixins/ignore.js');
+const addMixin = require('./mixins/add.js');
 
 module.exports = function() {
 	configMixin(gulp);
@@ -21,6 +22,7 @@ module.exports = function() {
   isMixin(gulp);
   ignoreMixin(gulp);
   debugMixin(gulp);
+  addMixin(gulp);
 
 	return gulp;
 }();
