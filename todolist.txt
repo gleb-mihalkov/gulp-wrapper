@@ -8,7 +8,8 @@ API reference:
     ✔ Resolving file patterns by config.srcPath. @done (17-06-23 14:23)
     ✔ Error's handling by gulp-plumber. @done (17-06-23 14:23)
     ✔ Error notifications. @done (17-06-23 14:23)
-    ☐ Changed option: true is gulp.config.dst.
+    ✔ Changed option: true is gulp.config.dst. @done (17-06-26 12:03)
+    ✔ errorHandler option: disables native error's handling if false. @done (17-06-26 12:03)
     ☐ Respect the opts.base in resolving.
   ✔ gulp.dst() @done (17-06-23 14:23)
     ✔ Adding destination from config.dstPath. @done (17-06-23 14:23)
@@ -16,8 +17,8 @@ API reference:
     ✔ Add options. @done (17-06-23 19:11)
   ✔ gulp.watch() @done (17-06-21 23:32)
     ✔ Recreate the behavior of an API using the plugin gulp-watch. @done (17-06-21 23:32)
-  ☐ gulp.init()
+  ✔ gulp.init() @done (17-06-26 11:32)
     ✔ Task names arguments. @done (17-06-23 14:28)
-    ☐ deps and callback arguments.
+    ✔ deps and callback arguments. @done (17-06-26 11:32)
   ☐ gulp-util mixin.
   ☐ gulp-if mixin.

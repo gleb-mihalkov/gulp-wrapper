@@ -21,6 +21,7 @@
   "homepage": "https://github.com/gleb-mihalkov/gulp-wrapper#readme",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-changed": "^3.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
