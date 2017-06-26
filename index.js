@@ -8,6 +8,7 @@ const srcMixin = require('./mixins/src.js');
 const dstMixin = require('./mixins/dst.js');
 const utilMixin = require('./mixins/util.js');
 const isMixin = require('./mixins/is.js');
+const debugMixin = require('./mixins/debug.js');
 
 module.exports = function() {
 	configMixin(gulp);
@@ -17,6 +18,7 @@ module.exports = function() {
   dstMixin(gulp);
   utilMixin(gulp);
   isMixin(gulp);
+  debugMixin(gulp);
 
 	return gulp;
 }();
