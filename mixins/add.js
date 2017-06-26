@@ -1,6 +1,6 @@
 'use strict';
 
-const globResolve = require(__dirname + '/utils/glob_resolve.js');
+const globResolve = require(__dirname + '/../utils/glob_resolve.js');
 const add = require('gulp-add-src');
 
 function getWrapper(gulp, fn) {

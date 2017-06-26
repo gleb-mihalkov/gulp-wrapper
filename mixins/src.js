@@ -1,7 +1,7 @@
 'use strict';
 
-const errorHandler = require(__dirname + '/utils/error_handler.js');
-const globResolve = require(__dirname + '/utils/glob_resolve.js');
+const errorHandler = require(__dirname + '/../utils/error_handler.js');
+const globResolve = require(__dirname + '/../utils/glob_resolve.js');
 const Util = require('util');
 const plumber = require('gulp-plumber');
 const changed = require('gulp-changed');

@@ -1,6 +1,6 @@
 'use strict';
 
-const pathResolve = require(__dirname + '/utils/path_resolve.js');
+const pathResolve = require(__dirname + '/path_resolve.js');
 
 module.exports = function() {
   let args = Array.prototype.slice.call(arguments, 0);

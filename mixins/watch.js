@@ -1,7 +1,7 @@
 'use strict';
 
 const watch = require('gulp-watch');
-const globResolve = require(__dirname + '/utils/glob_resolve.js');
+const globResolve = require(__dirname + '/../utils/glob_resolve.js');
 
 function getCallback(gulp, tasks) {
   tasks = tasks || [];

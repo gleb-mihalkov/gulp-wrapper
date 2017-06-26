@@ -1,6 +1,6 @@
 'use strict';
 
-const pathResolve = require(__dirname + '/utils/path_resolve.js');
+const pathResolve = require(__dirname + '/../utils/path_resolve.js');
 const concat = require('gulp-concat');
 const Path = require('path');
 
