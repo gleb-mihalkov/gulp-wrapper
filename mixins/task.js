@@ -112,6 +112,14 @@ module.exports = function(gulp) {
     register(gulp);
 
     let defs = Array.prototype.slice.call(arguments, 0);
-    gulp._taskFn('default', defs);
+    let tail = defs[defs.length - 1];
+
+    if (tail && typeof(tail) === 'function') {
+      let cb = defs.pop();
+      gulp._taskFn('default', defs, cb);
+    }
+    else {
+      gulp._taskFn('default', defs);
+    }
   };
 };
