@@ -27,5 +27,5 @@ API reference:
     ☐ Pass none-stream errors to stream when stream in process.
   ✔ gulp-util mixin. @done (17-06-26 12:25)
   ✔ gulp-if mixin. @done (17-06-26 12:27)
-  ☐ gulp-debug mixin.
-  ☐ gulp-ignore mixin.
+  ✔ gulp-debug mixin. @done (17-06-26 12:54)
+  ✔ gulp-ignore mixin. @done (17-06-26 12:54)
