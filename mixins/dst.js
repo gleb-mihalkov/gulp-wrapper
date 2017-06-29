@@ -4,6 +4,12 @@ const pathResolve = require(__dirname + '/../utils/path_resolve.js');
 const concat = require('gulp-concat');
 const Path = require('path');
 
+/**
+ * Split destination path to basename and filename.
+ * @param  {Object} gulp Gulp instance.
+ * @param  {String} dest Destination path.
+ * @return {Array}       Array like [basename, filename].
+ */
 function splitDest(gulp, dest) {
   let separator = Path.sep;
   let index = dest.lastIndexOf(separator);
@@ -31,6 +37,11 @@ function splitDest(gulp, dest) {
   return [basename, filename];
 }
 
+/**
+ * Add mixin to Gulp instance.
+ * @param  {Object} gulp Gulp instance.
+ * @return {void}
+ */
 module.exports = function(gulp) {
   gulp._dstFn = gulp.dest;
 
