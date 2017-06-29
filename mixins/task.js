@@ -1,5 +1,12 @@
 'use strict';
 
+/**
+ * Create node for task tree.
+ * @param  {String}   name Short name of task (without path).
+ * @param  {Array}    deps Dependencies of this task.
+ * @param  {Function} fn   Task's callback.
+ * @return {Object}        Node of the task tree.
+ */
 function create(name, deps, fn) {
   let path, full;
 
@@ -24,6 +31,12 @@ function create(name, deps, fn) {
   };
 }
 
+/**
+ * Find the parent node in the task tree for injection of new node.
+ * @param  {Object} node Root node of tree.
+ * @param  {Object} task New node.
+ * @return {Object}      Parent node.
+ */
 function findParent(node, task) {
   for (let i = 0; i < task.path.length - 1; i++) {
     let name = task.path[i];
@@ -41,6 +54,12 @@ function findParent(node, task) {
   return node;
 }
 
+/**
+ * Push the new node in task tree.
+ * @param  {Object} gulp Instance of Gulp.
+ * @param  {Object} node New task node.
+ * @return {void}
+ */
 function push(gulp, node) {
   let parent = findParent(gulp._taskTree, node);
   let old = parent.childs[node.name];
@@ -54,6 +73,12 @@ function push(gulp, node) {
   old.fn = node.fn;
 }
 
+/**
+ * Register all tasks from tree in instance of Gulp.
+ * @param  {Object} gulp Gulp instance.
+ * @param  {Object} node Current node for recursive traversing.
+ * @return {void}
+ */
 function register(gulp, node) {
   if (node == null) {
     node = gulp._taskTree;
@@ -83,6 +108,11 @@ function register(gulp, node) {
   gulp._taskFn(task, deps, fn);
 }
 
+/**
+ * Add new methods into gulp instance.
+ * @param  {Object} gulp Instance of Gulp.
+ * @return {void}
+ */
 module.exports = function(gulp) {
 
   gulp._taskTree = create('_root');
