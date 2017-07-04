@@ -12,6 +12,7 @@ const debugMixin = require(__dirname + '/mixins/debug.js');
 const ignoreMixin = require(__dirname + '/mixins/ignore.js');
 const addMixin = require(__dirname + '/mixins/add.js');
 const cleanMixin = require(__dirname + '/mixins/clean.js');
+const seriesMixin = require(__dirname + '/mixins/series.js');
 
 module.exports = function() {
 	configMixin(gulp);
@@ -25,6 +26,7 @@ module.exports = function() {
   debugMixin(gulp);
   addMixin(gulp);
   cleanMixin(gulp);
+  seriesMixin(gulp);
 
 	return gulp;
 }();

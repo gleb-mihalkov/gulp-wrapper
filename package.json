@@ -30,6 +30,7 @@
     "gulp-ignore": "^2.0.2",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-sequence": "^0.4.6",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11",
     "pretty-error": "^2.1.1"
