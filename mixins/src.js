@@ -2,6 +2,7 @@
 
 const errorHandler = require(__dirname + '/../utils/error_handler.js');
 const globResolve = require(__dirname + '/../utils/glob_resolve.js');
+const pathResolve = require(__dirname + '/../utils/path_resolve.js');
 const Util = require('util');
 const plumber = require('gulp-plumber');
 const changed = require('gulp-changed');
@@ -26,7 +27,10 @@ module.exports = function(gulp) {
     }
 
     if (opts.changed) {
-      let destPath = opts.changed === true ? gulp.config.dst : opts.changed;
+      let destPath = opts.changed === true
+        ? gulp.config.dst
+        : pathResolve(gulp.config.dst, opts.changed);
+        
       result = result.pipe(changed(destPath));
     }
 
